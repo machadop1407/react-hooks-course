@@ -10,13 +10,16 @@ const StateTutorial = () => {
   };
 
   return (
-    <div>
-      <div>
-        <input placeholder="enter something..." onChange={updateUiInformation} />
-        {inputValue}
-      </div>
-      <div>
-        <button onClick={() => setCounter(counter + 1)}>Click Me {counter}</button>
+    <div className="card">
+      <div className="card-body">
+        <h5 class="card-title">State Component</h5>
+        <div>
+          <input placeholder="enter something..." onChange={updateUiInformation} />
+          {inputValue}
+        </div>
+        <div>
+          <button className="btn btn-primary" onClick={() => setCounter(counter + 1)}>Click Me {counter}</button>
+        </div>
       </div>
     </div>
   );
