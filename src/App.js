@@ -11,7 +11,16 @@ import CallBackTutorial from "./UseCallback/CallbackTutorial";
 function App() {
   return (
     <div className="App">
-      <StateTutorial />
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <StateTutorial />
+          </div>
+          <div className="col">
+            <ReducerTutorial />
+          </div>
+        </div>  
+      </div>
     </div>
   );
 }
